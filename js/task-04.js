@@ -9,17 +9,17 @@ const buttonIncrEl = document.querySelector("[data-action = increment]");
 
 const counterValue = 0;
 
-function handleButtonDecrClick(event) {
+function onButtonDecrClick(event) {
   const counterValue = Number(valueEl.textContent);
   valueEl.textContent = counterValue - 1;
   console.log(counterValue);
 }
 
-buttonDecrEl.addEventListener("click", handleButtonDecrClick);
+buttonDecrEl.addEventListener("click", onButtonDecrClick);
 
-function handleButtonIncrClick(event) {
+function onButtonIncrClick(event) {
   const counterValue = Number(valueEl.textContent);
   valueEl.textContent = counterValue + 1;
   console.log(counterValue);
 }
-buttonIncrEl.addEventListener("click", handleButtonIncrClick);
+buttonIncrEl.addEventListener("click", onButtonIncrClick);
