@@ -9,10 +9,9 @@ console.log("Number of categories:", allCategories.length);
 //   console.log("Elements:", allItems.length);
 // }
 
-
-const allArray = [...allCategories].map(
-  (category) => `Category: ${category.querySelectorAll("h2")[0].textContent} 
-  Elements: ${category.querySelectorAll("ul li").length}`
-). join('\n');
-
-console.log(allArray)
+const allAray = allCategories.forEach((category) => {
+  const allTitle = category.querySelectorAll("h2")[0].textContent;
+  console.log("Category:", allTitle);
+  const allItems = category.querySelectorAll("ul li").length;
+  console.log("Elements:", allItems);
+});
